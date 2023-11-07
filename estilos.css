@@ -1,0 +1,932 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: rgba(255, 255, 255, 0.569);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+/* Estilos de la lista */
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+/* Estilos de los enlaces */
+a {
+     color: blueviolet;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Estilos de la línea debajo del enlace al pasar el cursor */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: blueviolet;
+    height: 3px;
+    width: 0;   
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+nav a{
+    color: #000;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+
+/* Estilos del logotipo de la barra de navegación */
+.navbar img {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: -15px;
+    width: 150px;
+    border-width: 0px;
+    border: 0px;
+}
+
+
+ 
+
+/* Estilos del menú de navegación */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos de los enlaces del menú */
+.nav-link {
+    font-weight: 550;
+    list-style: none;
+    font-size: 14px;
+    padding: 0px 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-link:hover {
+    color:blueviolet;
+}
+
+
+.nav-brading img{
+    width: 80px ;
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para el elemento de idioma */
+li #languaje {
+    padding: 5px;
+}
+
+/* Estilos del icono del menú hamburguesa */
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Estilos del buscador */
+#buscador {
+    width: 25px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    display: flex;
+    margin: 0px 10px;
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+/* Estilos de la barra del menú hamburguesa */
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    background-color: blueviolet;
+}
+
+/* Estilos del Hero*/
+
+.hero {
+    width: 100%;
+    height: 600px;
+    background: blueviolet;
+    /* fallback for old browsers */
+    background: linear-gradient(to right, hsl(264, 93%, 61%), hsl(181, 55%, 39%), hsl(264, 93%, 61%)), url(./images/grupo-personas-trabajando-plan-negocios-oficina.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(264, 93%, 61%), hsla(0, 0%, 87%, 0.418), hsla(264, 93%, 61%)), url(./images/grupo-personas-trabajando-plan-negocios-oficina.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+/* Estilos parrafos del Hero*/
+.hero p {
+
+    font-size: 55px;
+    color: white;
+    font-weight: 800;
+    padding: 20px;
+}
+
+/* Estilos boton del Hero*/
+.boton {
+
+    font-family: Poppins, sans-serif;
+    visibility: visible;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    box-sizing: content-box !important;
+    vertical-align: middle;
+    color: #fff;
+    max-width: 100%;
+    display: inline-block;
+    line-height: 1.2;
+    border-radius: 0;
+    font-weight: 600;
+    position: relative;
+    font-size: 12px;
+    background: transparent;
+    padding: 15px 40px;
+    margin: 0 0 10px;
+    border: 1px solid #fff;
+    transition: all .4s ease;
+    cursor: pointer !important;
+    border: solid rgb(255, 255, 255) 1px;
+}
+
+.boton:hover {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+}
+
+/* Estilos del texto de la sección principal*/
+.text-section {
+    color: #000;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 21px !important;
+    line-height: 34px !important;
+    text-align: center;
+}
+
+
+.text {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000;
+    font-family: Poppins, sans-serif;
+    background: #fff;
+    padding: 80px 25px !important;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 99.99999998999999%;
+    min-height: 0;
+    margin-left: 0;
+}
+
+
+.link-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.primary {
+
+    text-align: center;
+}
+
+.primary h2 {
+    color: #000;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+
+    font-weight: 800;
+}
+
+.primary p {
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+}
+
+/* Estilos del contenedor de la tabla*/
+.container {
+    background: url(./images/25101.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+    padding-top: 80px;
+
+}
+
+.container h2 {
+    padding-top: 80px;
+}
+
+ 
+
+.primary table {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    text-align: start;
+
+}
+
+td {
+    padding: 8px 40px;
+}
+
+td span {
+    margin-right: 10px;
+}
+
+td a:hover {
+    border-bottom: 1px solid blueviolet;
+    color: blueviolet;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/*Estilos de las tarjetas principales*/
+
+.primary-card .cars {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+
+}
+
+.primary-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+section {
+    text-align: center;
+    
+}
+
+section h2 {
+    color: #000;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 60px;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px black;
+}
+
+.img-card {
+    height: 170px;
+
+
+}
+
+div .cards {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: start;
+    margin: 10px;
+    border-bottom: 6px solid rgb(231, 231, 231);
+    border-right: 6px solid rgb(235, 235, 235);
+ 
+
+
+}
+
+ 
+
+.cards p {
+    color: #000;
+    width: 60%;
+    height: 60px;
+
+}
+
+
+section .texto-card {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 60px;
+
+}
+
+.cards h4 {
+    width: 60%;
+    
+
+
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 0;
+
+
+
+}
+
+.type:hover {
+    background-color: transparent;
+    color: #ba00ad;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.button input {
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    width: 450px;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #ba00ad;
+    color: #fff;
+    border: 1px solid #ba00ad;
+    height: 50px;
+    font-weight: 600;
+
+    text-align: left;
+    font-size: 12px;
+
+
+}
+
+.button p {
+    line-height: 1.4;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #000;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 22px;
+    background-color: #fff;
+}
+
+.text-center {
+    padding-bottom: 20px;
+}
+
+.cards h4 {
+    color: #000;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    font-weight: 900;
+    padding: 25px 5px;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+
+.cards p {
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+    line-height: 1.6;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+
+#boton-central {
+    font-family: Poppins, sans-serif;
+    visibility: visible;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    box-sizing: content-box !important;
+    padding: 15px 20px;
+     width: 250px;
+    max-width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    border-color: #000;
+    background-color: transparent;
+    cursor: pointer !important;
+    
+}
+.a{
+    padding: 60px;
+     
+}
+
+#boton-central:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Estilos de linea de cliente*/
+
+.images-client{
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.client{
+    width: 200px;
+    padding:0px 30px;
+}
+
+.titulo-clientes{
+    margin: 30px;
+}
+ 
+.certificados{
+    display: flex;
+
+}
+
+.logos{
+    display: flex;
+    justify-content:center ;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.logos img{
+    padding: 30px;
+    margin: auto;
+    width: 320px;
+ 
+}
+
+.linea{
+    height: 500px;
+    margin:20px 0px;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.certifique{
+    
+    background-image: linear-gradient(to left, #6a11cb 0%, #2575fc 100%);
+}
+
+.certifique h2{
+    font-weight: 600;
+     color: white;
+}
+
+.certifique h4{
+    font-weight: 600;
+    padding: 30px;
+     color: white;
+}
+
+.logo-derecha{
+    
+     height: 120px;
+
+  
+}
+
+.tarjet{
+    display: flex;
+    flex-direction:column;
+    padding: 50px 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.tarjet P{
+    padding: 30px 0px;
+}
+
+.tarjet-bold{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.tarjet-all{
+    
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000;
+    font-family: Poppins,sans-serif;
+    box-sizing: border-box;
+    width: 27%;
+    margin: 10px;
+    text-align: start;
+    border-bottom: 6px solid rgb(231, 231, 231);
+    border-right: 6px solid rgb(235, 235, 235);
+    border-bottom: 2px solid purple;
+    
+    
+}
+
+.tarjet-all h4{
+    font-size: 20px;
+}
+
+.text-tarjet{
+    padding: 10px;
+}
+
+.text-tarjet span{
+    text-decoration: underline;
+    color: purple;
+}
+
+
+.tarjet-all:hover{
+    color: purple;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.tarjet-all img{
+    width: 450px;
+    width: 100%;
+}
+
+ 
+
+.tarjet-all .button{
+    margin-left: 50%;
+}
+
+
+#footer{
+    background: #000;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding-right: 60px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: Poppins,sans-serif;
+    background: #000;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 12px;
+    padding-bottom: 60px;
+    text-align: start;
+    
+}
+
+.titulo-footer{
+    margin-left: 40px;
+}
+
+footer h4{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: white;
+    
+ 
+   margin: auto;
+     
+}
+
+.card-footer{
+    padding: 30px;
+    
+}
+
+.primary-footer{
+    color: white;
+    margin-top: 26px;
+    
+}
+
+#logo-footer{
+    padding: 30px 0px;
+}
+
+.primary-footer a{
+    color: white;
+    padding: 10px;
+     
+}
+
+.linea-footer{
+    height: 300px;
+    width: 1px;
+    background: white;
+}
+
+.redes{
+    display: flex;
+    justify-content:center;
+        
+    margin-top: 50px;
+}
+
+.redes img{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+
+/* Estilos responsivos y del menu hamburguesa*/
+
+@media(max-width:1080px) {
+    .hamburguer {
+        display: block;
+
+    }
+
+    .linea{
+        display: none;
+    }
+
+    table td {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+
+
+
+
+    .nav-item {
+        margin: 2px 0;
+
+    }
+
+
+
+    .nav-menu.active {
+        left: 0;
+
+    }
+
+    .nav-menu {
+        z-index: 1;
+        display: flex;
+
+
+    }
+
+
+
+    .nav-item {
+        border-top: 1px blueviolet solid;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .primary-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .certificados{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images-client{
+        padding: 20px;
+        
+    }
+
+   body{
+    padding: 5px;
+   }
+    
+
+   div .cards {
+    border: none;
+ 
+    
+
+}
+
+
+.tarjet-all{
+    width: 100%;
+}
+.tarjet-bold{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+footer{
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.footer{
+    flex-wrap: wrap;
+}
+
+footer table{
+     display: flex;
+     width: 100%;
+}
+
+.linea-footer{
+    display: none;
+    
+}
+ 
+
+}
+
+
+/* Estilos generales */
+
+/* Estilos para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+
+    /* Aquí puedes agregar los estilos específicos para dispositivos móviles */
+
+    /* Por ejemplo, puedes modificar la apariencia del encabezado */
+    header {
+        /* Estilos para dispositivos móviles */
+    }
+    /* Estilos para la sección 1 */
+    section:nth-child(2) {
+        /* Estilos para dispositivos móviles */
+    }
+
+    /* Estilos para la sección 2 */
+    section:nth-child(3) {
+        /* Estilos para dispositivos móviles */
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 769px */
+@media (min-width: 769px) {
+    /* Aquí puedes agregar los estilos específicos para dispositivos de escritorio */
+
+    /* Por ejemplo, puedes modificar la apariencia del encabezado */
+    header {
+        /* Estilos para dispositivos de escritorio */
+    }
+
+    /* Estilos para la sección 1 */
+    section:nth-child(2) {
+        /* Estilos para dispositivos de escritorio */
+    }
+
+    /* Estilos para la sección 2 */
+    section:nth-child(3) {
+        /* Estilos para dispositivos de escritorio */
+    }
+}
